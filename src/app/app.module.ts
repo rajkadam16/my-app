@@ -8,6 +8,9 @@ import { Item2Component } from './componets/scrollingSidebar/item2/item2.compone
 import { Item3Component } from './componets/scrollingSidebar/item3/item3.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { Data1Component } from './componets/scrollingSidebar/item1/data1/data1.component';
+import { Data2Component } from './componets/scrollingSidebar/item1/data2/data2.component';
+import { Data3Component } from './componets/scrollingSidebar/item1/data3/data3.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     ScrollingSidebarComponent,
     Item1Component,
     Item2Component,
-    Item3Component
+    Item3Component,
+    Data1Component,
+    Data2Component,
+    Data3Component
   ],
   imports: [
     BrowserModule,
