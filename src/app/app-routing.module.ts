@@ -11,7 +11,7 @@ import { SidescrollComponent } from './componets/sidescroll/sidescroll.component
 
 const routes: Routes = [
   {
-    path: 'sideScroll',
+    path: 'components',
     component: SidescrollComponent,
     children: [
       {
