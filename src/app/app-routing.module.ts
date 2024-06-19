@@ -6,41 +6,50 @@ import { Item3Component } from './componets/scrollingSidebar/item3/item3.compone
 import { Data1Component } from './componets/scrollingSidebar/item1/data1/data1.component';
 import { Data2Component } from './componets/scrollingSidebar/item1/data2/data2.component';
 import { Data3Component } from './componets/scrollingSidebar/item1/data3/data3.component';
+import { HomeComponent } from './componets/home/home.component';
+import { SidescrollComponent } from './componets/sidescroll/sidescroll.component';
 
 const routes: Routes = [
   {
-    path: 'item1',
-    component:Item1Component,
+    path: 'sideScroll',
+    component: SidescrollComponent,
     children: [
       {
-        path: 'data1',
-        component: Data1Component
+        path: 'chapter1', component:Item1Component,
+        children: [
+          {
+            path: 'data1',
+            component: Data1Component,
+          },
+          {
+            path: 'data2',
+            component: Data2Component,
+          },
+
+          {
+            path: 'data3',
+            component: Data3Component,
+          },
+        ],
       },
       {
-        path: 'data2',
-        component: Data2Component
+        path: 'chapter2',
+        component: Item2Component,
       },
-      
       {
-        path: 'data3',
-        component: Data3Component
+        path: 'chapter3',
+        component: Item3Component,
       },
-    ]
+    ],
   },
   {
-    path: 'item2',
-    component:Item2Component,
-    children: []
-  },
-  {
-    path: 'item3',
-    component:Item3Component,
-    children: []
+    path: 'home',
+    component: HomeComponent, 
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
