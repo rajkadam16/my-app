@@ -1,0 +1,84 @@
+{
+  "logo": {
+    "isEnabled": true,
+    "displayName": "insurance logo",
+    "src": "/assets/images/logo.jpg",
+    "url": "/",
+    "style": "width: 70px; height:50px;"
+  },
+  "menuItems": [
+    {
+      "isEnabled": true,
+      "displayName": "Home",
+      "url": "/",
+      "routerLinkActive": "active"
+    },
+    {
+      "isEnabled": true,
+      "displayName": "Portfolio Info",
+      "url": "/portfolioinfo",
+      "routerLinkActive": "active"
+    },
+    {
+      "isEnabled": true,
+      "displayName": "FAQs",
+      "url": "/commonfaq",
+      "routerLinkActive": "active"
+    },
+    {
+      "isEnabled": true,
+      "displayName": "About Us",
+      "url": "/album",
+      "routerLinkActive": "active"
+    },
+    {
+      "isEnabled": true,
+      "displayName": "Contact",
+      "url": "/pricing",
+      "routerLinkActive": "active"
+    },
+    {
+      "isEnabled": true,
+      "displayName": "Table",
+      "url": "/table",
+      "routerLinkActive": "active"
+    }
+  ],
+  "buttonMenuItems": [
+    {
+      "isEnabled": true,
+      "style": "btn btn-outline-primary me-2",
+      "url": "/login",
+      "displayName": "Login"
+    }
+  ],
+  "dropDownMenuItems": [
+    {
+      "isEnabled": true,
+      "img": "https://github.com/mdo.png",
+      "style": "",
+      "childMenuItems": [
+        {
+          "isEnabled": true,
+          "displayName": "Sign Up",
+          "url": "signup"
+        },
+        {
+          "isEnabled": true,
+          "displayName": "Settings",
+          "url": "/"
+        },
+        {
+          "isEnabled": true,
+          "displayName": "Profile",
+          "url": "profile"
+        },
+        {
+          "isEnabled": true,
+          "displayName": "Logout",
+          "url": "logout"
+        }
+      ]
+    }
+  ]
+}

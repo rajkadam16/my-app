@@ -1,0 +1,160 @@
+{
+  "tableSection":[
+    {
+      "isEnabled": true,
+      "tableSec":"Image"
+    },
+    {
+      "isEnabled": true,
+      "tableSec":"Order Name"
+    },
+    {
+      "isEnabled": true,
+      "tableSec":"Customer"
+    },
+    {
+      "isEnabled": true,
+      "tableSec":"Date & Time"
+    },
+    {    
+      "isEnabled": true,
+      "tableSec":"Payment"
+    },
+    {
+      "isEnabled": true,
+      "tableSec":"Status"
+    },
+    {
+      "isEnabled": true,
+      "tableSec":"Amount"
+    }
+  ],
+  "tableList": [
+    {
+      "isEnabled": true,
+      "selected":false,
+      "id":"orderOne",
+      "for":"orderOne",
+      "imageLink":"/",
+      "routerLink":"/",
+      "itemImage":"",
+      "productId":"FC#10d07",
+      "productName":"Alice Johnson",
+      "dateTime":"01 May 2023 (10:12 am)",
+      "paymentMethod":"Check",
+      "Status":"Success",
+      "price":"12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected":false,
+      "id":"orderOne",
+      "for":"orderOne",
+      "imageLink":"/",
+      "routerLink":"/",
+      "itemImage":"",
+      "productId":"FC#10f07",
+      "productName":"Michael Smith",
+      "dateTime":"01 May 2023 (10:12 am)",
+      "paymentMethod":"Paypal",
+      "Status":"Success",
+      "price":"12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected":false,
+      "id":"orderOne",
+      "for":"orderOne",
+      "imageLink":"/",
+      "routerLink":"/",
+      "itemImage":"",
+      "productId":"FC#1h007",
+      "productName":"Emily Davis",
+      "dateTime":"01 May 2023 (10:12 am)",
+      "paymentMethod":"Cash",
+      "Status":"Success",
+      "price":"12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected":false,
+      "id":"orderOne",
+      "for":"orderOne",
+      "imageLink":"/",
+      "routerLink":"/",
+      "itemImage":"",
+      "productId":"FC#10w07",
+      "productName":"James Wilson",
+      "dateTime":"01 May 2023 (10:12 am)",
+      "paymentMethod":"Bitcoin",
+      "Status":"Success",
+      "price":"12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected":false,
+      "id":"orderOne",
+      "for":"orderOne",
+      "imageLink":"/",
+      "routerLink":"/",
+      "itemImage":"",
+      "productId":"FC#10h07",
+      "productName":"Sarah Brown",
+      "dateTime":"01 May 2023 (10:12 am)",
+      "paymentMethod":"Cash",
+      "Status":"Success",
+      "price":"12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected":false,
+      "id":"orderOne",
+      "for":"orderOne",
+      "imageLink":"/",
+      "routerLink":"/",
+      "itemImage":"",
+      "productId":"FC#100j7",
+      "productName":"David Martinez",
+      "dateTime":"01 May 2023 (10:12 am)",
+      "paymentMethod":"Google Pay",
+      "Status":"Success",
+      "price":"12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected":false,
+      "id":"orderOne",
+      "for":"orderOne",
+      "imageLink":"/",
+      "routerLink":"/",
+      "itemImage":"",
+      "productId":"FC#100e7",
+      "productName":"Jessica Taylor",
+      "dateTime":"01 May 2023 (10:12 am)",
+      "paymentMethod":"Apple Pay",
+      "Status":"Success",
+      "price":"12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected":false,
+      "id":"orderOne",
+      "for":"orderOne",
+      "imageLink":"/",
+      "routerLink":"/",
+      "itemImage":"",
+      "productId":"FC#100f7",
+      "productName":"Robert Anderson",
+      "dateTime":"01 May 2023 (10:12 am)",
+      "paymentMethod":"Debit Card",
+      "Status":"Success",
+      "price":"12.99"
+    }
+  ],
+  "excelBtn": [
+    {
+      "isEnabled": true,
+      "buttonName":"Get Data"
+    }
+  ]
+}

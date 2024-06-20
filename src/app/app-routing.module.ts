@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ComponentSidenavComponent } from './pages/component-sidenav/component-sidenav.component';
 import { DatepickerComponent } from './componets/datepicker/datepicker.component';
 import { FooterComponent } from './componets/footer/footer.component';
+import { TableComponent } from './componets/table/table.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'footer',
         component: FooterComponent
+      },
+      {
+        path: 'table',
+        component: TableComponent
       }
     ]
   }
