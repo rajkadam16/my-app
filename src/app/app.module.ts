@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './componets/navbar/navbar.component';
 import { FooterComponent } from './componets/footer/footer.component';
@@ -66,6 +66,7 @@ import { Sideswiper1Component } from './componets/sideswiper/sideswiper1/sideswi
     FormsModule,
     HttpClientModule,
     NgxPaginationModule,
+    RouterLinkActive
   ],
   providers: [],
   bootstrap: [AppComponent],
