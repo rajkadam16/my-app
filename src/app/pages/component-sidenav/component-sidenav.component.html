@@ -1,33 +1,35 @@
-<div class="container-fluid">
-    <div class="row">
-        <aside class="col-lg-2 col-md-3 d-none d-md-block bg-light border-end vh-100 p-3">
-            <h3>Contents</h3>
-            <nav>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="datepicker">Datepicker</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="footer">Footer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="table">Table</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="tabs">Tabs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="productdetailes">Product Detaile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="sideswiper">Side Swiper</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+<div class="container-fluid ">
+  <div class="row">
+    <aside
+      class="col-lg-2 col-md-3 d-none d-md-block sidebar bg-light border-end overflow-auto p-3  "
+    >
+      <h3>Contents</h3>
+      <nav>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="datepicker" routerLinkActive="active">Datepicker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="footer" routerLinkActive="active">Footer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="table" routerLinkActive="active">Table</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="tabs" routerLinkActive="active">Tabs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="productdetailes" routerLinkActive="active">Product Detaile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="sideswiper" routerLinkActive="active">Side Swiper</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-        <section class="col-lg-10 col-md-9 p-3">
-            <router-outlet></router-outlet>
-        </section>
-    </div>
+    <section class="col-lg-10 col-md-9 main-content p-3">
+      <router-outlet></router-outlet>
+    </section>
+  </div>
 </div>
