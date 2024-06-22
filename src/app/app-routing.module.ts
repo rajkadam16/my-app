@@ -7,6 +7,7 @@ import { FooterComponent } from './componets/footer/footer.component';
 import { TableComponent } from './componets/table/table.component';
 import { TabsComponent } from './componets/tabs/tabs.component';
 import { ProductdetailesComponent } from './componets/productdetailes/productdetailes.component';
+import { SideswiperComponent } from './componets/sideswiper/sideswiper.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
       {
         path: 'productdetailes',
         component: ProductdetailesComponent
+      },
+      {
+        path: 'sideswiper',
+        component: SideswiperComponent
       }
     ]
   }
