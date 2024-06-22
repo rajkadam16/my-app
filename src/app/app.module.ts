@@ -20,6 +20,11 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FilterPipe } from './pipes/filter.pipe';
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
+import { Footer3Component } from './componets/footer/footer3/footer3.component';
+import { TabsComponent } from './componets/tabs/tabs.component';
+import { Tab1Component } from './componets/tabs/tab1/tab1.component';
+import { ProductdetailesComponent } from './componets/productdetailes/productdetailes.component';
+import { Productdetailes1Component } from './componets/productdetailes/productdetailes1/productdetailes1.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +42,12 @@ import { SafeUrlPipe } from './pipes/safe-url.pipe';
     Table1Component,
     //pipe
     FilterPipe,
-    SafeUrlPipe
+    SafeUrlPipe,
+    Footer3Component,
+    TabsComponent,
+    Tab1Component,
+    ProductdetailesComponent,
+    Productdetailes1Component
   ],
   imports: [
     BrowserModule,

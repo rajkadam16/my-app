@@ -5,6 +5,8 @@ import { ComponentSidenavComponent } from './pages/component-sidenav/component-s
 import { DatepickerComponent } from './componets/datepicker/datepicker.component';
 import { FooterComponent } from './componets/footer/footer.component';
 import { TableComponent } from './componets/table/table.component';
+import { TabsComponent } from './componets/tabs/tabs.component';
+import { ProductdetailesComponent } from './componets/productdetailes/productdetailes.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
       {
         path: 'table',
         component: TableComponent
+      },
+      {
+        path: 'tabs',
+        component: TabsComponent
+      },
+      {
+        path: 'productdetailes',
+        component: ProductdetailesComponent
       }
     ]
   }
