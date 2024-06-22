@@ -25,6 +25,8 @@ import { TabsComponent } from './componets/tabs/tabs.component';
 import { Tab1Component } from './componets/tabs/tab1/tab1.component';
 import { ProductdetailesComponent } from './componets/productdetailes/productdetailes.component';
 import { Productdetailes1Component } from './componets/productdetailes/productdetailes1/productdetailes1.component';
+import { SideswiperComponent } from './componets/sideswiper/sideswiper.component';
+import { Sideswiper1Component } from './componets/sideswiper/sideswiper1/sideswiper1.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { Productdetailes1Component } from './componets/productdetailes/productde
     TabsComponent,
     Tab1Component,
     ProductdetailesComponent,
-    Productdetailes1Component
+    Productdetailes1Component,
+    SideswiperComponent,
+    Sideswiper1Component
   ],
   imports: [
     BrowserModule,
@@ -61,9 +65,9 @@ import { Productdetailes1Component } from './componets/productdetailes/productde
     CommonModule,
     FormsModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
