@@ -1,0 +1,43 @@
+.collapse {
+    transition: max-height 0.55s, opacity 0.35s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    display: block !important;
+}
+
+.collapse.show {
+    max-height: 100rem;
+    opacity: 1;
+}
+
+.accordion {
+    .accordion-item {
+        margin-bottom: 0 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.04) !important;
+    }
+
+    .accordion-header {
+        padding: 0;
+
+        button {
+            padding: 1.2rem;
+            width: 100%;
+
+            span {
+                float: left;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .accordion-body {
+        padding: 1rem;
+    }
+}
+
+.accordion-shadow .accordion-item.show {
+    border-radius: 0.571rem;
+    margin: 10px 0;
+    border: 0;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1) !important;
+}

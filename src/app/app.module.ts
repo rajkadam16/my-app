@@ -27,6 +27,9 @@ import { ProductdetailesComponent } from './componets/productdetailes/productdet
 import { Productdetailes1Component } from './componets/productdetailes/productdetailes1/productdetailes1.component';
 import { SideswiperComponent } from './componets/sideswiper/sideswiper.component';
 import { Sideswiper1Component } from './componets/sideswiper/sideswiper1/sideswiper1.component';
+import { FaqsComponent } from './componets/faqs/faqs.component';
+import { Faqs1Component } from './componets/faqs/faqs1/faqs1.component';
+import { Faqs2Component } from './componets/faqs/faqs2/faqs2.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,10 @@ import { Sideswiper1Component } from './componets/sideswiper/sideswiper1/sideswi
     ProductdetailesComponent,
     Productdetailes1Component,
     SideswiperComponent,
-    Sideswiper1Component
+    Sideswiper1Component,
+    FaqsComponent,
+    Faqs1Component,
+    Faqs2Component
   ],
   imports: [
     BrowserModule,
