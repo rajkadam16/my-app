@@ -12,7 +12,7 @@ export class CommonUtilityService {
 
   /**
    * 
-   * @param path : Json file path
+   * @param path  Json file path
    * @returns returns json Object
    * @author raj
    */
