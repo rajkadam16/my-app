@@ -1,55 +1,33 @@
 {
-  "tableSection":[
-    {
-      "isEnabled": true,
-      "tableSec":"Image"
-    },
-    {
-      "isEnabled": true,
-      "tableSec":"Order Name"
-    },
-    {
-      "isEnabled": true,
-      "tableSec":"Customer"
-    },
-    {
-      "isEnabled": true,
-      "tableSec":"Date & Time"
-    },
-    {    
-      "isEnabled": true,
-      "tableSec":"Payment"
-    },
-    {
-      "isEnabled": true,
-      "tableSec":"Status"
-    },
-    {
-      "isEnabled": true,
-      "tableSec":"Amount"
-    }
-  ],
-  "tableList": [
-    {
-      "isEnabled": true,
+	"tblCols": [
+		"Image",
+		"Order Name",
+    "Customer",
+    "Date & Time",
+    "Payment",
+    "Status",
+    "Amount"
+	],
+	"tblDataList": [
+		{
+			"isEnabled": true,
       "selected":false,
-      "id":"orderOne",
-      "for":"orderOne",
+      "id":"order1",
+      "for":"order1",
       "imageLink":"/",
       "routerLink":"/",
       "itemImage":"",
-      "productId":"FC#10d07",
-      "productName":"Alice Johnson",
+      "productId":"FC#100f7",
+      "productName":"Robert Anderson",
       "dateTime":"01 May 2023 (10:12 am)",
-      "paymentMethod":"Check",
-      "Status":"Success",
-      "price":"12.99"
-    },
+      "paymentMethod":"Debit Card",
+      "Status":"Success"
+		},
     {
       "isEnabled": true,
       "selected":false,
-      "id":"orderOne",
-      "for":"orderOne",
+      "id":"order2",
+      "for":"order2",
       "imageLink":"/",
       "routerLink":"/",
       "itemImage":"",
@@ -63,8 +41,8 @@
     {
       "isEnabled": true,
       "selected":false,
-      "id":"orderOne",
-      "for":"orderOne",
+      "id":"order3",
+      "for":"order3",
       "imageLink":"/",
       "routerLink":"/",
       "itemImage":"",
@@ -78,8 +56,8 @@
     {
       "isEnabled": true,
       "selected":false,
-      "id":"orderOne",
-      "for":"orderOne",
+      "id":"order4",
+      "for":"order4",
       "imageLink":"/",
       "routerLink":"/",
       "itemImage":"",
@@ -93,8 +71,8 @@
     {
       "isEnabled": true,
       "selected":false,
-      "id":"orderOne",
-      "for":"orderOne",
+      "id":"order5",
+      "for":"order5",
       "imageLink":"/",
       "routerLink":"/",
       "itemImage":"",
@@ -108,8 +86,8 @@
     {
       "isEnabled": true,
       "selected":false,
-      "id":"orderOne",
-      "for":"orderOne",
+      "id":"order6",
+      "for":"order6",
       "imageLink":"/",
       "routerLink":"/",
       "itemImage":"",
@@ -123,8 +101,8 @@
     {
       "isEnabled": true,
       "selected":false,
-      "id":"orderOne",
-      "for":"orderOne",
+      "id":"order7",
+      "for":"order7",
       "imageLink":"/",
       "routerLink":"/",
       "itemImage":"",
@@ -138,8 +116,8 @@
     {
       "isEnabled": true,
       "selected":false,
-      "id":"orderOne",
-      "for":"orderOne",
+      "id":"order8",
+      "for":"order8",
       "imageLink":"/",
       "routerLink":"/",
       "itemImage":"",
@@ -150,11 +128,55 @@
       "Status":"Success",
       "price":"12.99"
     }
-  ],
-  "excelBtn": [
-    {
-      "isEnabled": true,
-      "buttonName":"Get Data"
-    }
-  ]
+	],
+	"tblProperties": {
+		"export": {
+			"isEnabled": true,
+			"style": {
+				"align": "right"
+			},
+			"exportToPdf": {
+				"isEnabled": false,
+        "displayName": "pdf"
+			},
+			"exportToCsv": {
+				"isEnabled": true,
+         "displayName": "csv"
+			},
+			"exportToHtml": {
+				"isEnabled": false
+			},
+			"exportToXml": {
+				"isEnabled": false
+			}
+		},
+		"colSelctor": {
+			"isEnabled": true
+		},
+		"filter": {
+      "style": {
+				"align": "right"
+			},
+			"filterByPage": {
+        "isEnabled": false
+      },
+			"filterByText": {
+        "isEnabled": true,
+        "style": {
+				  "align": "right"
+			  },
+        "placeholder" : "Search your product 22",
+        "id":"form1"
+      }
+		},
+		"pagination": {
+			"isEnabled": true
+		},
+		"sorting": {
+			"isEnabled": false
+		},
+      "action": {
+			"isEnabled": false
+		}
+	}
 }

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { SystemConfig } from 'src/app/shared/systemconfig';
-import * as XLSX from 'xlsx';
-import { JsonfilereaderService } from 'src/app/services/jsonfilereader.service';
+import { CommonUtilityService } from 'src/app/services/common-utility.service'
 
 @Component({
   selector: 'app-table1',
@@ -17,12 +16,19 @@ export class Table1Component {
   currentPage = 1;
   searchtext: any;
 
-  constructor(private table: JsonfilereaderService) {}
+
+  //------
+
+  tblCols: any[] = [];
+  tblDataList: any[] = [];
+  tblProperties: any;
+
+  constructor(private commonUtilityService: CommonUtilityService) { }
   ngOnInit(): void {
-    this.table.parseJsonFile(SystemConfig.tableJson).subscribe((res: any) => {
-      this.tableInfoData = res.tableList;
-      this.tableSectionData = res.tableSection;
-      this.excelBtnData = res.excelBtn;
+    this.commonUtilityService.parseJsonFile(SystemConfig.tableJson).subscribe((res: any) => {
+      this.tblCols = res.tblCols;
+      this.tblDataList = res.tblDataList;
+      this.tblProperties = res.tblProperties;
     });
   }
   toggleCheckAll() {
@@ -33,15 +39,14 @@ export class Table1Component {
     this.checkAll = this.tableInfoData.every((item) => item.selected);
   }
 
-  fileName = 'ExcelSheet.xlsx';
-  exportExcel() {
-    let data = document.getElementById('table-data');
+  /**
+   * 
+   */
+  exportToCsv(){
+    this.commonUtilityService.exportToCsv("tableData.csv", "table-data")
+  }
 
-    const ws: XLSX.WorkSheet = XLSX.utils.table_to_sheet(data);
+  exportToPdf(){
 
-    const wb: XLSX.WorkBook = XLSX.utils.book_new();
-
-    XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
-    XLSX.writeFile(wb, this.fileName);
   }
 }
