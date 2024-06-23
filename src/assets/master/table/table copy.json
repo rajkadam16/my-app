@@ -1,0 +1,182 @@
+{
+  "tblCols": [
+    "Image",
+    "Order Name",
+    "Customer",
+    "Date & Time",
+    "Payment",
+    "Status",
+    "Amount"
+  ],
+  "tblDataList": [
+    {
+      "isEnabled": true,
+      "selected": false,
+      "id": "order1",
+      "for": "order1",
+      "imageLink": "/",
+      "routerLink": "/",
+      "itemImage": "",
+      "productId": "FC#100f7",
+      "productName": "Robert Anderson",
+      "dateTime": "01 May 2023 (10:12 am)",
+      "paymentMethod": "Debit Card",
+      "Status": "Success"
+    },
+    {
+      "isEnabled": true,
+      "selected": false,
+      "id": "order2",
+      "for": "order2",
+      "imageLink": "/",
+      "routerLink": "/",
+      "itemImage": "",
+      "productId": "FC#10f07",
+      "productName": "Michael Smith",
+      "dateTime": "01 May 2023 (10:12 am)",
+      "paymentMethod": "Paypal",
+      "Status": "Success",
+      "price": "12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected": false,
+      "id": "order3",
+      "for": "order3",
+      "imageLink": "/",
+      "routerLink": "/",
+      "itemImage": "",
+      "productId": "FC#1h007",
+      "productName": "Emily Davis",
+      "dateTime": "01 May 2023 (10:12 am)",
+      "paymentMethod": "Cash",
+      "Status": "Success",
+      "price": "12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected": false,
+      "id": "order4",
+      "for": "order4",
+      "imageLink": "/",
+      "routerLink": "/",
+      "itemImage": "",
+      "productId": "FC#10w07",
+      "productName": "James Wilson",
+      "dateTime": "01 May 2023 (10:12 am)",
+      "paymentMethod": "Bitcoin",
+      "Status": "Success",
+      "price": "12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected": false,
+      "id": "order5",
+      "for": "order5",
+      "imageLink": "/",
+      "routerLink": "/",
+      "itemImage": "",
+      "productId": "FC#10h07",
+      "productName": "Sarah Brown",
+      "dateTime": "01 May 2023 (10:12 am)",
+      "paymentMethod": "Cash",
+      "Status": "Success",
+      "price": "12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected": false,
+      "id": "order6",
+      "for": "order6",
+      "imageLink": "/",
+      "routerLink": "/",
+      "itemImage": "",
+      "productId": "FC#100j7",
+      "productName": "David Martinez",
+      "dateTime": "01 May 2023 (10:12 am)",
+      "paymentMethod": "Google Pay",
+      "Status": "Success",
+      "price": "12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected": false,
+      "id": "order7",
+      "for": "order7",
+      "imageLink": "/",
+      "routerLink": "/",
+      "itemImage": "",
+      "productId": "FC#100e7",
+      "productName": "Jessica Taylor",
+      "dateTime": "01 May 2023 (10:12 am)",
+      "paymentMethod": "Apple Pay",
+      "Status": "Success",
+      "price": "12.99"
+    },
+    {
+      "isEnabled": true,
+      "selected": false,
+      "id": "order8",
+      "for": "order8",
+      "imageLink": "/",
+      "routerLink": "/",
+      "itemImage": "",
+      "productId": "FC#100f7",
+      "productName": "Robert Anderson",
+      "dateTime": "01 May 2023 (10:12 am)",
+      "paymentMethod": "Debit Card",
+      "Status": "Success",
+      "price": "12.99"
+    }
+  ],
+  "tblProperties": {
+    "export": {
+      "isEnabled": true,
+      "style": {
+        "align": "right"
+      },
+      "exportToPdf": {
+        "isEnabled": false,
+        "displayName": "pdf"
+      },
+      "exportToCsv": {
+        "isEnabled": true,
+        "displayName": "csv"
+      },
+      "exportToHtml": {
+        "isEnabled": false
+      },
+      "exportToXml": {
+        "isEnabled": false
+      }
+    },
+    "colSelctor": {
+      "isEnabled": true
+    },
+    "filter": {
+      "style": {
+        "align": "right"
+      },
+      "filterByPage": {
+        "isEnabled": false
+      },
+      "filterByText": {
+        "isEnabled": true,
+        "style": {
+          "align": "right"
+        },
+        "placeholder": "Search your product 22",
+        "id": "form1"
+      }
+    },
+    "pagination": {
+      "isEnabled": true
+    },
+    "sorting": {
+      "isEnabled": false
+    },
+    "action": {
+      "isEnabled": false
+    }
+  }
+}

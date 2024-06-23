@@ -18,16 +18,14 @@ export class Table1Component {
 
 
   //------
-
-  tblCols: any[] = [];
-  tblDataList: any[] = [];
+  tblData: any;
   tblProperties: any;
+
 
   constructor(private commonUtilityService: CommonUtilityService) { }
   ngOnInit(): void {
     this.commonUtilityService.parseJsonFile(SystemConfig.tableJson).subscribe((res: any) => {
-      this.tblCols = res.tblCols;
-      this.tblDataList = res.tblDataList;
+      this.tblData = res.tblData;
       this.tblProperties = res.tblProperties;
     });
   }
