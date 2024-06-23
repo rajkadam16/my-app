@@ -15,7 +15,7 @@
                <div *ngIf="tblProperties.export.isEnabled" class="btn-group" role="group" aria-label="Basic example" class="col-lg-2 col-md-4 col-12 py-3 px-3">
                   <!-- export to CSV -->
                   <button *ngIf="tblProperties.export.exportToCsv.isEnabled" type="button"
-                     class="btn btn-primary">CSV</button>
+                     (click)="exportToCsv()" class="btn btn-primary">CSV</button>
                   <!-- export to PDF -->
                   <button *ngIf="tblProperties.export.exportToPdf.isEnabled" type="button"
                      class="btn btn-danger">PDF</button>
@@ -43,37 +43,25 @@
                               <label class="form-check-label" for="checkAll"></label>
                            </div>
                         </th>
-                        <th *ngFor="let col of tblCols">
+                        <th *ngFor="let colData of tblData.tblCols">
                            <div>
-                              {{ col }}
+                              {{ colData }}
                            </div>
                         </th>
                      </tr>
                   </thead>
-                  <tbody
-                     *ngFor="let tblData of tblDataList|filter:searchtext | paginate:{itemsPerPage:pageSize,currentPage} ">
-                     <tr *ngIf="tblData.isEnabled">
+                  <tbody *ngFor="let rowData of tblData.tblRows|filter:searchtext | paginate:{itemsPerPage:pageSize,currentPage} ">
+                     <tr>
                         <td *ngIf="tblProperties.colSelctor.isEnabled">
                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" [(ngModel)]="tblData.selected"
-                                 (change)="onItemChange()" value="" [id]="tblData.id" />
-                              <label class="form-check-label" [for]="tblData.for"></label>
+                              <input class="form-check-input" type="checkbox" [(ngModel)]="rowData.selected"
+                                 (change)="onItemChange()" value="" [id]="rowData.id" />
+                              <label class="form-check-label" [for]="rowData.for"></label>
                            </div>
                         </td>
-                        <td>
-                           <a [routerLink]="tblData.imageLink"><img [src]="tblData.itemImage" alt=""
-                                 class="icon-shape icon-md" /></a>
+                        <td *ngFor="let tblRowKey of tblData.tblRowKeys">
+                           {{ rowData[tblRowKey]}}
                         </td>
-                        <td>
-                           <a href="#" class="text-reset">{{ tblData.productId }}</a>
-                        </td>
-                        <td>{{ tblData.productName }}</td>
-                        <td>{{ tblData.dateTime }}</td>
-                        <td>{{ tblData.paymentMethod }}</td>
-                        <td>
-                           <span class="badge bg-light-primary text-dark-primary">{{tblData.Status}}</span>
-                        </td>
-                        <td>{{ tblData.price }}</td>
                      </tr>
                   </tbody>
                </table>
