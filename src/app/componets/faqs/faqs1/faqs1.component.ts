@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { JsonfilereaderService } from 'src/app/services/jsonfilereader.service';
+import { CommonUtilityService } from 'src/app/services/common-utility.service';
 import { SystemConfig } from 'src/app/shared/systemconfig';
 
 @Component({
@@ -10,10 +10,10 @@ import { SystemConfig } from 'src/app/shared/systemconfig';
 export class Faqs1Component {
   faqData: any[] = [];
 
-  constructor(public faq: JsonfilereaderService) { }
+  constructor(private commonUtilityService: CommonUtilityService) { }
 
   ngOnInit(): void {
-    this.faq.parseJsonFile(SystemConfig.faqJson).subscribe((res: any) => {
+    this.commonUtilityService.parseJsonFile(SystemConfig.faqJson).subscribe((res: any) => {
       this.faqData = res;
     });
   }

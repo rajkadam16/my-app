@@ -1,2 +1,30 @@
-<p><app-datepicker1></app-datepicker1></p>
-<p><app-datepicker2></app-datepicker2></p>
+<div class="card mt-5">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button"
+                role="tab" aria-controls="first" aria-selected="true">Overview</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button"
+                role="tab" aria-controls="second" aria-selected="false">API</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button"
+                role="tab" aria-controls="third" aria-selected="false">Examples</button>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">The implementation
+            Overview here</div>
+        <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">Moreover, the active tab's
+            API here
+        </div>
+        <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+            <p><app-datepicker1></app-datepicker1></p>
+            <p><app-datepicker2></app-datepicker2></p>
+        </div>
+    </div>
+</div>
