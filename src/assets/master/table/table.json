@@ -2,6 +2,7 @@
   "tblData": {
     "tblCols": [
       "Product Id",
+      "Product Name",
       "Customer",
       "Date & Time",
       "Payment",
@@ -10,7 +11,8 @@
     ],
     "tblRowKeys": [
       "productId",
-      "customer",
+      "productName",
+      "customerName",
       "datetime",
       "payment",
       "status",
@@ -19,7 +21,8 @@
     "tblRows": [
       {
         "productId": "1",
-        "customer": "Robert Anderson",
+        "productName":"Alexa Homemini",
+        "customerName": "Robert Anderson",
         "datetime": "01 May 2023 (10:12 am)",
         "payment": "Debit Card",
         "status": "Success",
@@ -27,7 +30,8 @@
       },
       {
         "productId": "2",
-        "customer": "Robert Anderson",
+        "productName":"google",
+        "customerName": "John Anderson",
         "datetime": "02 May 2023 (10:12 am)",
         "payment": "Debit Card",
         "status": "Success",
@@ -71,7 +75,7 @@
         "style": {
           "align": "right"
         },
-        "placeholder": "Search your product 22",
+        "placeholder": "Search your product",
         "id": "form1"
       }
     },
