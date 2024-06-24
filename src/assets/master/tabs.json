@@ -1,0 +1,29 @@
+{
+   "isEnabled": true,
+   "tabs": [
+      {
+         "isEnabled": true,
+         "title": "Tab 1",
+         "content": "Content 1",
+         "active": true
+      },
+      {
+         "isEnabled": true,
+         "title": "Tab 2",
+         "content": "Content 2",
+         "active": false
+      },
+      {
+         "isEnabled": true,
+         "title": "Tab 3",
+         "content": "Content 3",
+         "active": false
+      },
+      {
+         "isEnabled": false,
+         "title": "Tab 4",
+         "content": "<app-table></app-table>",
+         "active": false
+      }
+   ]
+}

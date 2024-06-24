@@ -8,9 +8,6 @@ import { CommonUtilityService } from 'src/app/services/common-utility.service'
   styleUrls: ['./table1.component.css']
 })
 export class Table1Component {
-  tableInfoData: any[] = [];
-  tableSectionData: any[] = [];
-  excelBtnData: any[] = [];
   checkAll: boolean = false;
   pageSize = 5;
   currentPage = 1;
@@ -31,20 +28,20 @@ export class Table1Component {
   }
   toggleCheckAll() {
     this.checkAll = !this.checkAll;
-    this.tableInfoData.forEach((item) => (item.selected = this.checkAll));
+    this.tblData.tblRows.forEach((item: any) => (item.selected = this.checkAll));
   }
   onItemChange() {
-    this.checkAll = this.tableInfoData.every((item) => item.selected);
+    this.checkAll = this.tblData.tblRows.every((item: any) => item.selected);
   }
 
   /**
    * 
    */
-  exportToCsv(){
+  exportToCsv() {
     this.commonUtilityService.exportToCsv("tableData.csv", "table-data")
   }
 
-  exportToPdf(){
+  exportToPdf() {
 
   }
 }
