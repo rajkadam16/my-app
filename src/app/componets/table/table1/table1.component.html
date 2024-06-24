@@ -8,9 +8,8 @@
                <div *ngIf="tblProperties.filter.filterByText.isEnabled" class="col-md-4 col-12  my-3 m-3">
                   <input type="search" [(ngModel)]="searchtext" id="{{tblProperties.filter.filterByText.id}}"
                      class="form-control " placeholder="{{tblProperties.filter.filterByText.placeholder}}"
-                     aria-label="search ">
+                     aria-label="search">
                </div>
-
 
                <div *ngIf="tblProperties.export.isEnabled" class="btn-group" role="group" aria-label="Basic example" class="col-lg-2 col-md-4 col-12 py-3 px-3">
                   <!-- export to CSV -->
