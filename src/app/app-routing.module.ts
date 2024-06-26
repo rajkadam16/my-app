@@ -9,6 +9,8 @@ import { TabsComponent } from './componets/tabs/tabs.component';
 import { ProductdetailesComponent } from './componets/productdetailes/productdetailes.component';
 import { SideswiperComponent } from './componets/sideswiper/sideswiper.component';
 import { FaqsComponent } from './componets/faqs/faqs.component';
+import { CarouselComponent } from './componets/carousel/carousel.component';
+import { LoaderComponent } from './componets/loader/loader.component';
 
 const routes: Routes = [
   {
@@ -46,6 +48,14 @@ const routes: Routes = [
       {
         path: 'faqs',
         component: FaqsComponent
+      },
+      {
+        path: 'carousel',
+        component: CarouselComponent
+      },
+      {
+        path: 'loader',
+        component: LoaderComponent
       }
     ]
   }

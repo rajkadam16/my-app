@@ -30,6 +30,12 @@ import { Sideswiper1Component } from './componets/sideswiper/sideswiper1/sideswi
 import { FaqsComponent } from './componets/faqs/faqs.component';
 import { Faqs1Component } from './componets/faqs/faqs1/faqs1.component';
 import { Faqs2Component } from './componets/faqs/faqs2/faqs2.component';
+import { Sideswiper2Component } from './componets/sideswiper/sideswiper2/sideswiper2.component';
+import { CarouselComponent } from './componets/carousel/carousel.component';
+import { Carousel1Component } from './componets/carousel/carousel1/carousel1.component';
+import { LoaderComponent } from './componets/loader/loader.component';
+import { Loader1Component } from './componets/loader/loader1/loader1.component';
+import { Loader2Component } from './componets/loader/loader2/loader2.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +63,13 @@ import { Faqs2Component } from './componets/faqs/faqs2/faqs2.component';
     Sideswiper1Component,
     FaqsComponent,
     Faqs1Component,
-    Faqs2Component
+    Faqs2Component,
+    Sideswiper2Component,
+    CarouselComponent,
+    Carousel1Component,
+    LoaderComponent,
+    Loader1Component,
+    Loader2Component
   ],
   imports: [
     BrowserModule,
