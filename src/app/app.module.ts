@@ -36,6 +36,11 @@ import { Carousel1Component } from './componets/carousel/carousel1/carousel1.com
 import { LoaderComponent } from './componets/loader/loader.component';
 import { Loader1Component } from './componets/loader/loader1/loader1.component';
 import { Loader2Component } from './componets/loader/loader2/loader2.component';
+import { ListgroupComponent } from './componets/listgroup/listgroup.component';
+import { Listgroup1Component } from './componets/listgroup/listgroup1/listgroup1.component';
+import { CardComponent } from './componets/card/card.component';
+import { Card1Component } from './componets/card/card1/card1.component';
+import { Card2Component } from './componets/card/card2/card2.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +74,12 @@ import { Loader2Component } from './componets/loader/loader2/loader2.component';
     Carousel1Component,
     LoaderComponent,
     Loader1Component,
-    Loader2Component
+    Loader2Component,
+    ListgroupComponent,
+    Listgroup1Component,
+    CardComponent,
+    Card1Component,
+    Card2Component
   ],
   imports: [
     BrowserModule,

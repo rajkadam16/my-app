@@ -11,6 +11,8 @@ import { SideswiperComponent } from './componets/sideswiper/sideswiper.component
 import { FaqsComponent } from './componets/faqs/faqs.component';
 import { CarouselComponent } from './componets/carousel/carousel.component';
 import { LoaderComponent } from './componets/loader/loader.component';
+import { ListgroupComponent } from './componets/listgroup/listgroup.component';
+import { CardComponent } from './componets/card/card.component';
 
 const routes: Routes = [
   {
@@ -56,6 +58,14 @@ const routes: Routes = [
       {
         path: 'loader',
         component: LoaderComponent
+      },
+      {
+        path: 'listgroup',
+        component: ListgroupComponent
+      },
+      {
+        path: 'card',
+        component: CardComponent
       }
     ]
   }
