@@ -14,6 +14,7 @@ import { LoaderComponent } from './componets/loader/loader.component';
 import { ListgroupComponent } from './componets/listgroup/listgroup.component';
 import { CardComponent } from './componets/card/card.component';
 import { ProfilesectionComponent } from './componets/profilesection/profilesection.component';
+import { PricingComponent } from './componets/pricing/pricing.component';
 
 const routes: Routes = [
   {
@@ -71,6 +72,10 @@ const routes: Routes = [
       {
         path: 'profilesection',
         component: ProfilesectionComponent
+      },
+      {
+        path: 'pricing',
+        component: PricingComponent
       }
     ]
   }
