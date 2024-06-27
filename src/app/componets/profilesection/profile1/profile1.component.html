@@ -1,0 +1,18 @@
+<div *ngFor="let profile of profileData" class="col-lg-4">
+    <div *ngIf="profile.isEnabled" class="card py-3">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center text-center">
+          <img [src]="profile.profileImage" alt="Admin" class="rounded-circle p-1 bg-primary" width="110" />
+          <div class="mt-3">
+            <h4>{{ profile.name }}</h4>
+            <p class="text-secondary mb-1">{{ profile.jobTitle }}</p>
+            <p class="text-muted font-size-sm">{{ profile.location }}</p>
+            <button class="btn btn-primary">{{ profile.btnName1 }}</button>
+            <button class="btn btn-outline-primary">
+              {{ profile.btnName2 }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
