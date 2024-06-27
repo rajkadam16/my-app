@@ -41,6 +41,9 @@ import { Listgroup1Component } from './componets/listgroup/listgroup1/listgroup1
 import { CardComponent } from './componets/card/card.component';
 import { Card1Component } from './componets/card/card1/card1.component';
 import { Card2Component } from './componets/card/card2/card2.component';
+import { ProfilesectionComponent } from './componets/profilesection/profilesection.component';
+import { Profile1Component } from './componets/profilesection/profile1/profile1.component';
+import { Profile2Component } from './componets/profilesection/profile2/profile2.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +82,10 @@ import { Card2Component } from './componets/card/card2/card2.component';
     Listgroup1Component,
     CardComponent,
     Card1Component,
-    Card2Component
+    Card2Component,
+    ProfilesectionComponent,
+    Profile1Component,
+    Profile2Component,
   ],
   imports: [
     BrowserModule,

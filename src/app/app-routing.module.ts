@@ -13,6 +13,7 @@ import { CarouselComponent } from './componets/carousel/carousel.component';
 import { LoaderComponent } from './componets/loader/loader.component';
 import { ListgroupComponent } from './componets/listgroup/listgroup.component';
 import { CardComponent } from './componets/card/card.component';
+import { ProfilesectionComponent } from './componets/profilesection/profilesection.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,10 @@ const routes: Routes = [
       {
         path: 'card',
         component: CardComponent
+      },
+      {
+        path: 'profilesection',
+        component: ProfilesectionComponent
       }
     ]
   }
