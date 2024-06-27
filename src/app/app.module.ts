@@ -44,6 +44,9 @@ import { Card2Component } from './componets/card/card2/card2.component';
 import { ProfilesectionComponent } from './componets/profilesection/profilesection.component';
 import { Profile1Component } from './componets/profilesection/profile1/profile1.component';
 import { Profile2Component } from './componets/profilesection/profile2/profile2.component';
+import { PricingComponent } from './componets/pricing/pricing.component';
+import { Pricing1Component } from './componets/pricing/pricing1/pricing1.component';
+import { Pricing2Component } from './componets/pricing/pricing2/pricing2.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +89,9 @@ import { Profile2Component } from './componets/profilesection/profile2/profile2.
     ProfilesectionComponent,
     Profile1Component,
     Profile2Component,
+    PricingComponent,
+    Pricing1Component,
+    Pricing2Component,
   ],
   imports: [
     BrowserModule,
