@@ -47,6 +47,17 @@ import { Profile2Component } from './componets/profilesection/profile2/profile2.
 import { PricingComponent } from './componets/pricing/pricing.component';
 import { Pricing1Component } from './componets/pricing/pricing1/pricing1.component';
 import { Pricing2Component } from './componets/pricing/pricing2/pricing2.component';
+import { ToggelsbuttonComponent } from './componets/toggelsbutton/toggelsbutton.component';
+import { Toggelsbutton1Component } from './componets/toggelsbutton/toggelsbutton1/toggelsbutton1.component';
+import { Toggelsbutton2Component } from './componets/toggelsbutton/toggelsbutton2/toggelsbutton2.component';
+import { Toggelsbutton3Component } from './componets/toggelsbutton/toggelsbutton3/toggelsbutton3.component';
+import { Toggelsbutton4Component } from './componets/toggelsbutton/toggelsbutton4/toggelsbutton4.component';
+import { Loader3Component } from './componets/loader/loader3/loader3.component';
+import { Tab2Component } from './componets/tabs/tab2/tab2.component';
+import { InputsComponent } from './componets/inputs/inputs.component';
+import { Inputs1Component } from './componets/inputs/inputs1/inputs1.component';
+import { Inputs2Component } from './componets/inputs/inputs2/inputs2.component';
+import { Inputs3Component } from './componets/inputs/inputs3/inputs3.component';
 
 @NgModule({
   declarations: [
@@ -92,6 +103,17 @@ import { Pricing2Component } from './componets/pricing/pricing2/pricing2.compone
     PricingComponent,
     Pricing1Component,
     Pricing2Component,
+    ToggelsbuttonComponent,
+    Toggelsbutton1Component,
+    Toggelsbutton2Component,
+    Toggelsbutton3Component,
+    Toggelsbutton4Component,
+    Loader3Component,
+    Tab2Component,
+    InputsComponent,
+    Inputs1Component,
+    Inputs2Component,
+    Inputs3Component,
   ],
   imports: [
     BrowserModule,
