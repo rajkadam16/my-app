@@ -15,11 +15,20 @@ import { ListgroupComponent } from './componets/listgroup/listgroup.component';
 import { CardComponent } from './componets/card/card.component';
 import { ProfilesectionComponent } from './componets/profilesection/profilesection.component';
 import { PricingComponent } from './componets/pricing/pricing.component';
+import { ToggelsbuttonComponent } from './componets/toggelsbutton/toggelsbutton.component';
+import { InputsComponent } from './componets/inputs/inputs.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo:'home',
+    pathMatch:"full"
+    
+  },
+  {
     path: 'home',
     component: HomeComponent,
+    
   },
   {
     path: 'components',
@@ -76,6 +85,14 @@ const routes: Routes = [
       {
         path: 'pricing',
         component: PricingComponent
+      },
+      {
+        path: 'toggelbtn',
+        component: ToggelsbuttonComponent
+      },
+      {
+        path:'input',
+        component:InputsComponent
       }
     ]
   }
