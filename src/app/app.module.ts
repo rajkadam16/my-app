@@ -30,6 +30,7 @@ import { Sideswiper1Component } from './componets/sideswiper/sideswiper1/sideswi
 import { FaqsComponent } from './componets/faqs/faqs.component';
 import { Faqs1Component } from './componets/faqs/faqs1/faqs1.component';
 import { Faqs2Component } from './componets/faqs/faqs2/faqs2.component';
+import { DynamicComponentDirective } from './directives/dynamic-component.directive';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,9 @@ import { Faqs2Component } from './componets/faqs/faqs2/faqs2.component';
     Sideswiper1Component,
     FaqsComponent,
     Faqs1Component,
-    Faqs2Component
+    Faqs2Component,
+    //directives
+    DynamicComponentDirective
   ],
   imports: [
     BrowserModule,

@@ -1,21 +1,20 @@
 <div class="card mt-5">
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-       <li class="nav-item" role="presentation">
-         <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="first" aria-selected="true">First</button>
-       </li>
-       <li class="nav-item" role="presentation">
-         <button class="nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false">Second</button>
-       </li>
-       <li class="nav-item" role="presentation">
-         <button class="nav-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="third" aria-selected="false">Third</button>
-       </li>
-     </ul>
-     
-     <!-- Tab panes -->
-     <div class="tab-content" id="myTabContent">
-       <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">The implementation of Bootstrap 5 tabs with enhanced styling significantly improves the user experience by offering a clean, modern, and intuitive interface. By leveraging Bootstrap's robust framework, the tabs provide seamless navigation between different content sections, ensuring that users can easily access the information they need without excessive scrolling or clicking. The custom styles applied to the tabs—such as the light background color, bold text, and rounded corners—create a visually appealing and cohesive design that aligns well with contemporary web aesthetics.</div>
-       <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">Moreover, the active tab's distinct appearance, characterized by a vibrant background color and contrasting text, effectively guides the user's attention to the current content section. This design choice not only enhances the visual hierarchy but also reinforces the user's sense of orientation within the interface. The hover effect on the tabs further enriches the interactive experience, providing immediate visual feedback and encouraging user engagement. Additionally, the tab pane's styling, with its padding, white background, and rounded corners, ensures that the content is presented in a well-organized and readable manner.</div>
-       <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">The overall layout, including the container's spacing and the body's light background, contributes to a clean and uncluttered user interface. This thoughtful design approach not only makes the tabs aesthetically pleasing but also functional, as it reduces visual noise and enhances readability. The use of Bootstrap 5's responsive design capabilities ensures that the tabs and their content adapt smoothly to various screen sizes, providing a consistent and user-friendly experience across desktops, tablets, and smartphones. By combining these elements, the Bootstrap 5 tabs with enhanced styling offer a superior web component that balances form and function, catering to both aesthetic preferences and usability standards.</div>
-     </div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li *ngFor="let tabData of tabDataList" class="nav-item" role="presentation">
+      <button class="nav-link {{tabData.defaultActive}}" id="{{tabData.id}}+'-tab'" data-bs-toggle="tab"
+        [attr.data-bs-target]="'#'+tabData.id" type="button" role="tab" [attr.aria-controls]="tabData.id"
+        [attr.aria-selected]="tabData.selected">{{tabData.displayName}}</button>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content" id="myTabContent">
+    <div *ngFor="let tabData of tabDataList" class="tab-pane fade show {{tabData.defaultActive}}" id="{{tabData.id}}"
+      role="tabpanel" [attr.aria-labelledby]="tabData.id+'-tab'">
+      <ng-container *ngFor="let component of tabData.components">
+        <ng-container *ngComponentOutlet="component"></ng-container>
+      </ng-container>
     </div>
+  </div>
+</div>

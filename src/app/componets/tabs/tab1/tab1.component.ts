@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tab1',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./tab1.component.css']
 })
 export class Tab1Component {
-
+  @Input("data") tabDataList: any; // decorate the property with @Input()
 }
