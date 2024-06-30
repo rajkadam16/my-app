@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Tab1Component } from './tab1.component';
+import { DynamicTabComponent } from './dynamictab.component';
 
 describe('Tab1Component', () => {
-  let component: Tab1Component;
-  let fixture: ComponentFixture<Tab1Component>;
+  let component: DynamicTabComponent;
+  let fixture: ComponentFixture<DynamicTabComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Tab1Component]
+      declarations: [DynamicTabComponent]
     });
-    fixture = TestBed.createComponent(Tab1Component);
+    fixture = TestBed.createComponent(DynamicTabComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

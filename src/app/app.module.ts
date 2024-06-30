@@ -22,7 +22,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
 import { Footer3Component } from './componets/footer/footer3/footer3.component';
 import { TabsComponent } from './componets/tabs/tabs.component';
-import { Tab1Component } from './componets/tabs/tab1/tab1.component';
+import { DynamicTabComponent } from './componets/tabs/dynamic-tab/dynamictab.component';
 import { ProductdetailesComponent } from './componets/productdetailes/productdetailes.component';
 import { Productdetailes1Component } from './componets/productdetailes/productdetailes1/productdetailes1.component';
 import { SideswiperComponent } from './componets/sideswiper/sideswiper.component';
@@ -79,7 +79,7 @@ import { Inputs3Component } from './componets/inputs/inputs3/inputs3.component';
     SafeUrlPipe,
     Footer3Component,
     TabsComponent,
-    Tab1Component,
+    DynamicTabComponent,
     ProductdetailesComponent,
     Productdetailes1Component,
     SideswiperComponent,
