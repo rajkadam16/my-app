@@ -22,7 +22,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
 import { Footer3Component } from './componets/footer/footer3/footer3.component';
 import { TabsComponent } from './componets/tabs/tabs.component';
-import { Tab1Component } from './componets/tabs/tab1/tab1.component';
+import { DynamicTabComponent } from './componets/tabs/dynamic-tab/dynamictab.component';
 import { ProductdetailesComponent } from './componets/productdetailes/productdetailes.component';
 import { Productdetailes1Component } from './componets/productdetailes/productdetailes1/productdetailes1.component';
 import { SideswiperComponent } from './componets/sideswiper/sideswiper.component';
@@ -30,6 +30,7 @@ import { Sideswiper1Component } from './componets/sideswiper/sideswiper1/sideswi
 import { FaqsComponent } from './componets/faqs/faqs.component';
 import { Faqs1Component } from './componets/faqs/faqs1/faqs1.component';
 import { Faqs2Component } from './componets/faqs/faqs2/faqs2.component';
+import { DynamicComponentDirective } from './directives/dynamic-component.directive';
 import { Sideswiper2Component } from './componets/sideswiper/sideswiper2/sideswiper2.component';
 import { CarouselComponent } from './componets/carousel/carousel.component';
 import { Carousel1Component } from './componets/carousel/carousel1/carousel1.component';
@@ -78,7 +79,7 @@ import { Inputs3Component } from './componets/inputs/inputs3/inputs3.component';
     SafeUrlPipe,
     Footer3Component,
     TabsComponent,
-    Tab1Component,
+    DynamicTabComponent,
     ProductdetailesComponent,
     Productdetailes1Component,
     SideswiperComponent,
@@ -86,6 +87,8 @@ import { Inputs3Component } from './componets/inputs/inputs3/inputs3.component';
     FaqsComponent,
     Faqs1Component,
     Faqs2Component,
+    //directives
+    DynamicComponentDirective,
     Sideswiper2Component,
     CarouselComponent,
     Carousel1Component,
