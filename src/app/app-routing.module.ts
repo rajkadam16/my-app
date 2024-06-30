@@ -9,11 +9,26 @@ import { TabsComponent } from './componets/tabs/tabs.component';
 import { ProductdetailesComponent } from './componets/productdetailes/productdetailes.component';
 import { SideswiperComponent } from './componets/sideswiper/sideswiper.component';
 import { FaqsComponent } from './componets/faqs/faqs.component';
+import { CarouselComponent } from './componets/carousel/carousel.component';
+import { LoaderComponent } from './componets/loader/loader.component';
+import { ListgroupComponent } from './componets/listgroup/listgroup.component';
+import { CardComponent } from './componets/card/card.component';
+import { ProfilesectionComponent } from './componets/profilesection/profilesection.component';
+import { PricingComponent } from './componets/pricing/pricing.component';
+import { ToggelsbuttonComponent } from './componets/toggelsbutton/toggelsbutton.component';
+import { InputsComponent } from './componets/inputs/inputs.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo:'home',
+    pathMatch:"full"
+    
+  },
+  {
     path: 'home',
     component: HomeComponent,
+    
   },
   {
     path: 'components',
@@ -46,6 +61,38 @@ const routes: Routes = [
       {
         path: 'faqs',
         component: FaqsComponent
+      },
+      {
+        path: 'carousel',
+        component: CarouselComponent
+      },
+      {
+        path: 'loader',
+        component: LoaderComponent
+      },
+      {
+        path: 'listgroup',
+        component: ListgroupComponent
+      },
+      {
+        path: 'card',
+        component: CardComponent
+      },
+      {
+        path: 'profilesection',
+        component: ProfilesectionComponent
+      },
+      {
+        path: 'pricing',
+        component: PricingComponent
+      },
+      {
+        path: 'toggelbtn',
+        component: ToggelsbuttonComponent
+      },
+      {
+        path:'input',
+        component:InputsComponent
       }
     ]
   }

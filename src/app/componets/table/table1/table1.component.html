@@ -11,19 +11,20 @@
                      aria-label="search">
                </div>
 
-               <div *ngIf="tblProperties.export.isEnabled" class="btn-group" role="group" aria-label="Basic example" class="col-lg-2 col-md-4 col-12 py-3 px-3">
+               <div *ngIf="tblProperties.export.isEnabled" class="btn-group" role="group" aria-label="Basic example"
+                  class="col-lg-2 col-md-4 col-12 py-3 px-3">
                   <!-- export to CSV -->
-                  <button *ngIf="tblProperties.export.exportToCsv.isEnabled" type="button"
-                     (click)="exportToCsv()" class="btn btn-primary">CSV</button>
+                  <button *ngIf="tblProperties.export.exportToCsv.isEnabled" type="button" (click)="exportToCsv()"
+                     class="btn btn-primary">CSV</button>
                   <!-- export to PDF -->
                   <button *ngIf="tblProperties.export.exportToPdf.isEnabled" type="button"
                      class="btn btn-danger">PDF</button>
                   <!-- export to XML -->
                   <button *ngIf="tblProperties.export.exportToXml.isEnabled" type="button"
                      class="btn btn-danger">XML</button>
-                   <!-- export to HTML -->
-                   <button *ngIf="tblProperties.export.exportToHtml.isEnabled" type="button"
-                   class="btn btn-danger">HTML</button>
+                  <!-- export to HTML -->
+                  <button *ngIf="tblProperties.export.exportToHtml.isEnabled" type="button"
+                     class="btn btn-danger">HTML</button>
                </div>
 
             </div>
@@ -49,7 +50,8 @@
                         </th>
                      </tr>
                   </thead>
-                  <tbody *ngFor="let rowData of tblData.tblRows|filter:searchtext | paginate:{itemsPerPage:pageSize,currentPage} ">
+                  <tbody
+                     *ngFor="let rowData of tblData.tblRows|filter:searchtext | paginate:{itemsPerPage:pageSize,currentPage} ">
                      <tr>
                         <td *ngIf="tblProperties.colSelctor.isEnabled">
                            <div class="form-check">
