@@ -6,50 +6,8 @@
       <h3>Contents</h3>
       <nav>
         <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="datepicker" routerLinkActive="active">Datepicker</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="footer" routerLinkActive="active">Footer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="table" routerLinkActive="active">Table</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="tabs" routerLinkActive="active">Tabs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="productdetailes" routerLinkActive="active">Product Detaile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="sideswiper" routerLinkActive="active">Side Swiper</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="faqs" routerLinkActive="active">Faqs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="carousel" routerLinkActive="active">Carousel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="loader" routerLinkActive="active">Loader</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="listgroup" routerLinkActive="active">Listgroup</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="card" routerLinkActive="active">Card</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="profilesection" routerLinkActive="active">Profile section</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="pricing" routerLinkActive="active">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="toggelbtn" routerLinkActive="active">Toggel button</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="input" routerLinkActive="active">Inputs</a>
+          <li *ngFor="let section of sections" class="nav-item">
+            <a class="nav-link" [routerLink]="section.routerLink" routerLinkActive="active">{{section.displayname}}</a>
           </li>
         </ul>
       </nav>

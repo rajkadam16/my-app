@@ -1,0 +1,86 @@
+{
+"header":[
+    {
+        "isEnabled": true,
+        "header": "Contents"
+    }
+],
+
+  "section": [
+    {
+      "isEnabled": true,
+      "routerLink": "datepicker",
+      "displayname":"Datepicker"
+    },
+    {
+        "isEnabled": true,
+        "routerLink": "footer",
+        "displayname":"Footer"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "table",
+        "displayname":"Table"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "tabs",
+        "displayname":"Tabs"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "productdetailes",
+        "displayname":"Product Detaile"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "sideswiper",
+        "displayname":"Side Swiper"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "faqs",
+        "displayname":"Faqs"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "carousel",
+        "displayname":"Carousel"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "loader",
+        "displayname":"Loader"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "listgroup",
+        "displayname":"Listgroup"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "card",
+        "displayname":"Card"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "profilesection",
+        "displayname":"Profile section"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "toggelbtn",
+        "displayname":"Toggel button"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "pricing",
+        "displayname":"Pricing"
+      },
+      {
+        "isEnabled": true,
+        "routerLink": "input",
+        "displayname":"Inputs"
+      }
+  ]
+}
