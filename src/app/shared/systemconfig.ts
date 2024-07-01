@@ -14,4 +14,5 @@ export const SystemConfig = {
     mediaplayerJson: "assets/master/mediaplayer.json",
     nestednavJson: "assets/master/nestednav.json",
     tabsJson: "assets/master/tabs.json",
+    sidenavbarJson: "assets/master/sidenavbar.json",
 }

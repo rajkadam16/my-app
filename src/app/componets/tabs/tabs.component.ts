@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { Table1Component } from '../table/table1/table1.component';
 import { TabModel } from 'src/app/services/interfaces/tab.model';
-import { Sideswiper1Component } from '../sideswiper/sideswiper1/sideswiper1.component';
+import { Tab2Component } from './tab2/tab2.component';
 
 @Component({
   selector: 'app-tabs',
@@ -30,8 +29,7 @@ export class TabsComponent {
     defaultActive: "",
     selected: false,
     components: [
-      Table1Component,
-      Sideswiper1Component]
+      Tab2Component]
   }
   ];
 }
