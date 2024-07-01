@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="card mt-5">
+        <div *ngFor="let data of containerDataList">
+            <ng-container *ngFor="let component of data.components">
+                <ng-container *ngComponentOutlet="component"></ng-container>
+            </ng-container>
+        </div>
+    </div>
+</div>

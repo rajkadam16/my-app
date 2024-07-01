@@ -59,6 +59,7 @@ import { InputsComponent } from './componets/inputs/inputs.component';
 import { Inputs1Component } from './componets/inputs/inputs1/inputs1.component';
 import { Inputs2Component } from './componets/inputs/inputs2/inputs2.component';
 import { Inputs3Component } from './componets/inputs/inputs3/inputs3.component';
+import { DynamicContainerComponent } from './shared/dynamic-container/dynamic-container.component';
 
 @NgModule({
   declarations: [
@@ -117,6 +118,7 @@ import { Inputs3Component } from './componets/inputs/inputs3/inputs3.component';
     Inputs1Component,
     Inputs2Component,
     Inputs3Component,
+    DynamicContainerComponent,
   ],
   imports: [
     BrowserModule,
