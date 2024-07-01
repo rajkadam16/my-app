@@ -1,13 +1,12 @@
-<div class="container-fluid ">
+<div class="container-fluid">
   <div class="row">
-    <aside
-      class="col-lg-2 col-md-3 d-none d-md-block sidebar bg-light border-end  p-3  "
-    >
-      <h3>Contents</h3>
+    <aside class="col-lg-2 col-md-3 d-none d-md-block sidebar bg-light border-end p-3">
+      <h3 *ngFor="let header of headers">{{header.headername}}</h3>
       <nav>
         <ul class="nav flex-column">
           <li *ngFor="let section of sections" class="nav-item">
-            <a class="nav-link" [routerLink]="section.routerLink" routerLinkActive="active">{{section.displayname}}</a>
+            <a *ngIf="section.isEnabled" class="nav-link" [routerLink]="section.routerLink" routerLinkActive="active">{{ section.displayname
+              }}</a>
           </li>
         </ul>
       </nav>
