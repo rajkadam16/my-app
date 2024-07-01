@@ -9,12 +9,14 @@ import { SystemConfig } from 'src/app/shared/systemconfig';
 })
 export class ComponentSidenavComponent {
 sections:any []=[]
+headers:any []=[]
 
 constructor(private sidenav: CommonUtilityService) { }
 
 ngOnInit(): void {
   this.sidenav.parseJsonFile(SystemConfig.sidenavbarJson).subscribe((res: any) => {
   this.sections = res.section;
+  this.headers = res.header;
   });
 }
 
